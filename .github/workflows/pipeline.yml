@@ -15,6 +15,8 @@ jobs:
           node-version: '14.x'
       - name: npm install
         run: npm install
+      - name: npm action
+        run: npm run action
       - name: npm build
         run: npm run build:ui
       - name: heroku

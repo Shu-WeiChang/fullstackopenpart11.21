@@ -7,6 +7,7 @@
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
     "devtest": "cross-env NODE_ENV=test nodemon index.js",
+    "action": "cd bloglist-frontend && npm install",
     "build:ui": "rm -rf build && cd bloglist-frontend && npm run build --prod && cp -r build ..",
     "deploy": "git push heroku main",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
